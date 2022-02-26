@@ -1,0 +1,19 @@
+const btn1 = document.querySelector('#city1');
+const btn2 = document.querySelector('#city2');
+
+btn1.addEventListener('click', function () => {
+fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=51.500153&lon=-0.1262362&exclude=hourly,minutely&units=metric&appid=${API_KEY}`)  
+        .then(res => res.json()).then(data => { 
+            console.log(data);
+        function(data);
+
+});
+
+
+btn2.addEventListener('click', function () => {
+fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=35.68321&lon=139.80894&exclude=hourly,minutely&units=metric&appid=${API_KEY}`)  
+        .then(res => res.json()).then(data => { 
+            console.log(data);
+        function(data);
+
+});
