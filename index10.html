@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style10.css">
+    <title>Twin Cities</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="cityInfo">
+
+            <div class="dateInfo">
+                <div class="time" id="time">12:00 <span id="am-pm">PM</span></div>
+                <div class="date" id="date">Monday, 26 Feb</div>
+                <div class="weatherInfo" id="currentWeatherInfo"></div>
+            </div>
+
+            <div class="placeInfo">
+                <div class="timeZone" id="timeZone">London</div>
+                <div id="country" class="country">UK</div>
+            </div>
+            <div class="listCity">
+                <h3>View weather in:</h3>
+                 <button class="btn" id="city1">London</button>
+                 <button class="btn" id="city2">Tokyo</button>
+            </div>
+        </div>
+
+
+        
+    </div>
+
+    <div class="todayForecast">
+        <div class="currentWeather" id="currentTemp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="other">
+                <div class="day">Monday</div>
+                <div class="temp">Night - 10.6&#176; C</div>
+                <div class="temp">Day - 15&#176; C</div>
+            </div> 
+        </div>
+
+        <div class="futureForecast" id="futureForecast">
+            <div class="futureForecastItem">
+                <div class="day">Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 10.6&#176; C</div>
+                <div class="temp">Day - 15&#176; C</div>
+            </div>
+            <div class="futureForecastItem">
+                <div class="day">Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 10.6&#176; C</div>
+                <div class="temp">Day - 15&#176; C</div>
+            </div>
+            <div class="futureForecastItem">
+                <div class="day">Thur</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 10.6&#176; C</div>
+                <div class="temp">Day - 15&#176; C</div>
+            </div>
+            <div class="futureForecastItem">
+                <div class="day">Fri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 10.6&#176; C</div>
+                <div class="temp">Day - 15&#176; C</div>
+            </div>
+            <div class="futureForecastItem">
+                <div class="day">Sat</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 10.6&#176; C</div>
+                <div class="temp">Day - 15&#176; C</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="main10.js"></script>
+</body>
+</html>

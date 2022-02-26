@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:url('https://images.unsplash.com/photo-1645747103867-0669a7eff310?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1121&q=80');
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 20px 70px;
+    color:#fff;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+}
+
+.cityInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dateInfo{
+    font-weight: 100;
+}
+.dateInfo.time{
+    font-size: 70px;
+}
+
+.dateInfo #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.dateInfo .date{
+    font-size: 30px;
+}
+
+.placeInfo{
+    text-align: end;
+}
+
+.placeInfo .timeZone{
+    font-size: 10px;
+    font-weight: 50;
+}
+
+.placeInfo .country{
+    font-size: 10px;
+    font-weight: 50;
+}
+
+.listCity{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.listCity .h3{
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+.cityInfo .weatherInfo{
+    display: flex;
+    flex-direction: column;
+    background: rgba(24,24,27, 0.6);
+    padding:20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.cityInfo .weatherInfo .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.todayForecast{
+    background: rgba(6, 33, 184, 0.8);
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color:white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    height: 32%;
+}
+
+.todayForecast .currentWeather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding:15px;
+    padding-right: 40px;
+    background: rgb(15, 26, 180)
+    
+}
+
+.todayForecast .currentWeather .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.todayForecast .currentWeather .temp{
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.todayForecast .futureForecast{
+    display: flex;
+}
+
+.futureForecast .futureForecastItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.futureForecast .futureForecastItem .day{
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.futureForecast .futureForecastItem .temp{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.listCity .btn{
+    padding: 5px 15px;
+    background: #2626aa;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 100;
+    font-size: px;
+    color: white;
+}
+
+
+@media only screen and  (max-width:730px){
+    
+    .container{
+        padding: 20px;
+    }
+    
+    .todayForecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+
+    .todayForecast .currentWeather .temp{
+        font-size: 16px;
+    }
+
+    .dateInfo .time{
+        font-size: 50px;
+    }
+
+    .dateInfo #am-pm{
+        font-size: 20px;
+    }
+
+    .dateInfo .date{
+        font-size: 20px;
+    }
+
+    .placeInfo{
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .placeInfo .timeZone{
+        font-size: 20px;
+    }
+
+    .cityInfo .weatherInfo{
+        padding: 12px;
+    }
+
+    .cityInfo .weatherInfo .weather-item{
+        .cityInfo . .weather-item{
+        font-size: 14px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 1400px){
+    .todayForecast{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
+}
